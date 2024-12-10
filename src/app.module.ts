@@ -1,12 +1,10 @@
 import { Module } from '@nestjs/common';
 import { MoviesController } from './movies/movies.controller';
+import { MoviesService } from './movies/movies.service';
 
 @Module({
   imports: [],
   controllers: [MoviesController],
-  providers: [],
+  providers: [MoviesService],
 })
 export class AppModule {}
-
-// 터미널에 nest -> 명령어 목록 나옴
-// nest g co = nest generate controller
